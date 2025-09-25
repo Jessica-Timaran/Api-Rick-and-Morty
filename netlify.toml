@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  base = "frontend"       # <--- carpeta donde está tu package.json
+  publish = "frontend/dist"  # <--- carpeta que Netlify debe publicar
+  command = "npm install && npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
