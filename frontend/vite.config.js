@@ -1,5 +1,9 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './'
-})
+  root: '.',        
+  build: {
+    outDir: '../dist',     // Genera la carpeta dist en la raíz del proyecto
+    emptyOutDir: true
+  },
+});
