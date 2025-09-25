@@ -19,4 +19,4 @@ HTML + CSS → para la estructura y estilos.
 Fetch API → para consumir la API de Rick and Morty.
 
 ## 🌐 Demo en línea
-👉 [Ver aplicación en Netlify](rick-morty-api-j.netlify.app)
+👉 [Ver aplicación en Netlify](https://rick-morty-api-j.netlify.app)

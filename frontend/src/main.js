@@ -51,13 +51,20 @@ function loadLocationsPage() {
 }
 
 function renderNavbarToDOM() {
+    // Verificar si el navbar ya existe para no duplicarlo
+    if (document.querySelector('.navbar')) {
+        return;
+    }
+    
     // Crear y agregar navbar
     const header = document.createElement('header');
     header.innerHTML = renderNavbar();
     document.body.insertBefore(header, document.body.firstChild);
     
-    // Inicializar navbar
-    initNavbar();
+    // Inicializar navbar después de un pequeño delay para asegurar que el DOM esté listo
+    setTimeout(() => {
+        initNavbar();
+    }, 50);
 }
 
 function handleInitialRoute() {
