@@ -1,6 +1,6 @@
 [build]
-  base = "frontend"       # <--- carpeta donde está tu package.json
-  publish = "frontend/dist"  # <--- carpeta que Netlify debe publicar
+  base = "frontend"           # Carpeta donde está tu package.json
+  publish = "dist"            # Carpeta que Netlify debe publicar
   command = "npm install && npm run build"
 
 [build.environment]
