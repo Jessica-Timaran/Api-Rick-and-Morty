@@ -1,0 +1,97 @@
+.locations-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-darker) 0%, var(--color-dark) 100%);
+    padding-top: 80px;
+}
+
+.locations-header {
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.locations-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.locations-subtitle {
+    color: var(--color-gray);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    transition: all var(--transition);
+    cursor: pointer;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 30px rgba(0, 238, 255, 0.2);
+}
+
+.location-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.location-type {
+    background: var(--color-accent);
+    color: var(--color-dark);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.location-id {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+.location-card__name {
+    color: var(--color-light);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.location-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.location-card__footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.location-dimension {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,76 @@
+/* ===== MEJORAS RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .navbar__container {
+        padding: 10px 0;
+    }
+
+    .navbar__menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--color-dark);
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all var(--transition);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar--open .navbar__menu {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__link {
+        padding: 15px;
+        border-radius: 8px;
+        margin: 5px 0;
+    }
+
+    .navbar__toggle {
+        display: flex;
+    }
+
+    /* Evita scroll cuando el menú está abierto */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo__text {
+        font-size: 1.2rem;
+    }
+
+    .logo__dimension {
+        font-size: 0.6rem;
+    }
+
+    .navbar__link {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mejorar el responsive del home */
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: clamp(2rem, 8vw, 4rem);
+    }
+
+    .hero__btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
